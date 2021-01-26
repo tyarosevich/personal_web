@@ -50,7 +50,7 @@ html(lang='en')
         header.masthead.bg-primary.text-white.text-center
             .container.d-flex.align-items-center.flex-column
                 // Masthead Avatar Image
-                img.masthead-avatar.mb-5(src='assets/img/low_res_headshot.png',, class='rounded-circle', alt='')
+                img.masthead-avatar.mb-5(src='assets/img/low_res_headshot_cropped.jpg',, class='rounded-circle', alt='')
                 // Masthead Heading
                 h1.masthead-heading.text-uppercase.mb-0 Trent Yarosevich
                 // Icon Divider
@@ -67,7 +67,7 @@ html(lang='en')
             .container-fluid.p-0
                 .row.justify-content-center.no-gutters
                     .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/fullsize/yelp_screenshot.png')
+                        a.portfolio-box(href='http://yelp-dashboard.eba-jpaf3bhg.us-east-2.elasticbeanstalk.com/')
                             img.img-fluid(src='assets/img/portfolio/thumbnails/yelp_screenshot.png', alt='')
                             .portfolio-box-caption
                                 .project-category.text-white-50
@@ -122,42 +122,39 @@ html(lang='en')
                     .col-lg-8.text-center
                         h2.text-white.mt-0 Diverse science and humanities background, M.S. in Applied Mathematics (Univ. of Wash.) and M.A. in Philosophy (Stonybrook)
                         hr.divider.light.my-4
-                        p.text-white-50.mb-4
-                            | Blank
-                        a.btn.btn-light.btn-xl.js-scroll-trigger(href='#services') Future Resume Link
+                        a.btn.btn-light.btn-xl.js-scroll-trigger(href='assets/yarosevich_resume_indeed.pdf' download) Click here to view/download resume.
 
-        // Blog
+        // Main Content
         section#blog.page-section
             .container
-                h2.text-center.mt-0 Machine Learning and Philosophy
-                hr.divider.my-4
-                .row.justify-content-center
-                    .col-lg-3.col-md-6.text-center
-                        .mt-5
-                            i.fas.fa-4x.fa-cogs.text-primary.mb-4
-                            h3.h4.mb-2 AI and Machine Learning
-                            p.text-muted.mb-0 My thoughts on AI, with a focus on ethics.
-                    .col-lg-3.col-md-6.text-center
-                        .mt-5
-                            i.fas.fa-4x.fa-hand-spock.text-primary.mb-4
-                            h3.h4.mb-2 Philosophy
-                            p.text-muted.mb-0 Informal writing on relevant philosophical topics.
-                    //- .col-lg-3.col-md-6.text-center
-                    //-     .mt-5
-                    //-         i.fas.fa-4x.fa-globe.text-primary.mb-4
-                    //-         h3.h4.mb-2 Ready to Publish
-                    //-         p.text-muted.mb-0 You can use this design as is, or you can make changes!
-                    //- .col-lg-3.col-md-6.text-center
-                    //-     .mt-5
-                    //-         i.fas.fa-4x.fa-heart.text-primary.mb-4
-                    //-         h3.h4.mb-2 Made with Love
-                    //-         p.text-muted.mb-0 Is it really open source if it's not made with love
+              .row
+                .col-lg-8.col-md-10.mx-auto
+                  .post-preview
+                    a(href='../post/post.html')
+                      h2.post-title
+                        | Pending title.
+                      h3.post-subtitle
+                        | Pending subtitle.
+                    p.post-meta
+                      | Posted by
+                      a(href='#') Trent Yarosevich
+                      |             on January 25, 2021
+                  //- Kept as an example for fugure additions.
+                  //- hr
+                  //- .post-preview
+                  //-   a(href='post.html')
+                  //-     h2.post-title
+                  //-       | I believe every human has a finite number of heartbeats. I don&apos;t intend to waste any of mine.
+                  //-   p.post-meta
+                  //-     | Posted by
+                  //-     a(href='#') Start Bootstrap
+                  //-     |             on September 18, 2019
 
-        //- // Call to action
-        //- section.page-section.bg-dark.text-white
-        //-     .container.text-center
-        //-         h2.mb-4 Free Download at Start Bootstrap!
-        //-         a.btn.btn-light.btn-xl(href='https://startbootstrap.com/theme/creative/') Download Now!
+                  //- hr
+                  //- // Pager
+                  //- .clearfix
+                  //-   a.btn.btn-primary.float-right(href='#') Older Posts &rarr;
+
 
         // Contact
         section#contact.page-section
